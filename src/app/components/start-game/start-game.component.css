@@ -1,0 +1,40 @@
+
+.btn-container{
+    margin:auto;
+    width: 10%;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    outline:none;
+  }
+.flex-container{
+  position: center;
+  padding-left: 100px;
+}
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    outline:none;
+  }
+  img{
+    height: 200px;
+    width: 200px;
+  }
+  .quiz-card{
+    float: left;
+    padding: 100px;
+  }

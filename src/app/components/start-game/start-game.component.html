@@ -1,0 +1,70 @@
+<div class="p4 full-height container">
+  <div *ngIf="!selectUser">
+      <mat-card-title class="text-center"></mat-card-title>
+      <mat-card-subtitle class="text-center">
+        <h1 class="md-display-2">Choose a category!</h1>
+      </mat-card-subtitle>
+      <div class="flex-container" fxLayout="row" fxLayout.xs="column">
+        <mat-card class="quiz-card" *ngFor="let quiz of quizCategories">
+          <div class="img-container" >
+            <img
+              [routerLink]="quiz.url"
+              (click)="setQuizType(quiz.url)"
+
+              [src]="quiz.imgPath"
+              [alt]="quiz.alt"
+            />
+            <div [routerLink]="quiz.url"
+            (click)="setQuizType(quiz.url)"
+            class="centered">
+              {{quiz.label}}
+            </div>
+          </div>
+        </mat-card>
+      </div>
+  </div>
+  <div *ngIf="selectUser">
+    <div class="p20">
+      <h2 class="text-center text-primary">Select Your Opponent</h2>
+    </div>
+    <div>
+      <table class="table" *ngIf="users?.length > 0; else message">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let user of users"
+            (click)="userClicked($event, user)"
+            [class.highlighted]="user.id === selectedUserId"
+          >
+            <th scope="row">{{ user.id }}</th>
+            <td>{{ user.firstName }}</td>
+            <td>{{ user.lastName }}</td>
+            <td>{{ user.username }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <ng-template #message>
+        <h2 class="p-5 text-center">No Opponent User Available</h2>
+      </ng-template>
+    </div>
+    <div>
+      <div class="btn-container">
+        <button
+          type="button"
+          (click)="userSelected()"
+          [disabled]="!selectedUserId"
+          class="btn btn-primary"
+        >
+          Select User
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -17,16 +17,5 @@ function model(sequelize) {
     correctAnswersPlayer2: { type: DataTypes.INTEGER, allowNull: true }
   };
 
-//   const options = {
-//     defaultScope: {
-//       // exclude hash by default
-//       attributes: { exclude: ['hash'] }
-//     },
-//     scopes: {
-//       // include hash with this scope
-//       withHash: { attributes: {}, }
-//     }
-//   };
-
   return sequelize.define('Quiz', attributes);
 }

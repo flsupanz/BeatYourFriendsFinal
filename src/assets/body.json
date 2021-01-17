@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Aus wie vielen Wirbeln besteht die menschliche Brustwirbelsäule?",
+    "choices": [
+      {
+        "value": "15",
+        "correct": false
+      },
+      {
+        "value": "12",
+        "correct": true
+      },
+      {
+        "value": "9",
+        "correct": false
+      },
+      {
+        "value": "11",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Ab welchem Maß im BMI spricht man von Adipositas?",
+    "choices": [
+      {
+        "value": "24",
+        "correct": false
+      },
+      {
+        "value": "27",
+        "correct": false
+      },
+      {
+        "value": "30",
+        "correct": true
+      },
+      {
+        "value": "28",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Migräne ist eine chronische Erkrankung. Welches Leiden wiederfährt einem Betroffenen?",
+    "choices": [
+      {
+        "value": "Kopfschmerzen",
+        "correct": true
+      },
+      {
+        "value": "Halsschmerzen",
+        "correct": false
+      },
+      {
+        "value": "Gliederschmerzen",
+        "correct": false
+      },
+      {
+        "value": "Muskelkater",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Was ist \"Anorexia Nervosa\"?",
+    "choices": [
+      {
+        "value": "Fettleibigkeit",
+        "correct": false
+      },
+      {
+        "value": "Chronischer Husten",
+        "correct": false
+      },
+      {
+        "value": "Nervenkrankheit",
+        "correct": false
+      },
+      {
+        "value": "Magersucht",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "label": "Aus wie vielen Knochen bestehe eine menschliche Hand?",
+    "choices": [
+      {
+        "value": "27",
+        "correct": true
+      },
+      {
+        "value": "60",
+        "correct": false
+      },
+      {
+        "value": "12",
+        "correct": false
+      },
+      {
+        "value": "35",
+        "correct": false
+      }
+    ]
+  }
+]

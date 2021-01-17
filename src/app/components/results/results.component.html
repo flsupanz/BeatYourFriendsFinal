@@ -1,0 +1,29 @@
+<div class="custom-height">
+  <div class="results">
+    <h1 class="md-display-1 text-center">Your results:</h1>
+    <mat-card class="results-container text-center">
+      <div
+        class="answer"
+        *ngFor="let a of answers.values; let i = index"
+        [ngClass]="{ correct: a.correct }"
+      >
+        <p class="question-repeat">{{ i + 1 }}. {{ questions[i].label }}</p>
+        <p class="your-answer">
+          {{ a.value }} ---
+          <span class="wrong-right">{{
+            a.correct ? "Your answer was correct" : "Your answer was wrong"
+          }}</span>
+        </p>
+      </div>
+      <div class="w-100 d-flex justify-content-center pad-40-70">
+        <div>
+          <button
+            class="btn btn-primary"
+            routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            Back to home
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

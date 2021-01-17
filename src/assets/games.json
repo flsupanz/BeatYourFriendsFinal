@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Welche der folgenden Begriffe beschreibt die Art des Spiels \"World of Warcraft\"?",
+    "choices": [
+      {
+        "value": "MMORPG",
+        "correct": true
+      },
+      {
+        "value": "Denksport-Spiel",
+        "correct": false
+      },
+      {
+        "value": "Jump`n`Run",
+        "correct": false
+      },
+      {
+        "value": "Ego-Shooter",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Welcher Buchstabe steht auf Marios Brust, wenn er in \"Super Mario Bros. 3\" unbegrenzt fliegen kann?",
+    "choices": [
+      {
+        "value": " M",
+        "correct": false
+      },
+      {
+        "value": "E",
+        "correct": false
+      },
+      {
+        "value": "F",
+        "correct": false
+      },
+      {
+        "value": "P",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "label": "Wie heißen die drei spielbaren Hauptcharaktere im \"Grand Theft Auto 5\"",
+    "choices": [
+      {
+        "value": "Michael, Franklin, Trevor",
+        "correct": true
+      },
+      {
+        "value": "Michael, Brad, Franklin",
+        "correct": false
+      },
+      {
+        "value": "Michael, Brad, Trevor",
+        "correct": false
+      },
+      {
+        "value": "Michael, Brad, Jimmy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Wofür steht die Abkürzung \"CoD\" im Videospiel-Zusammenhang?",
+    "choices": [
+      {
+        "value": " Crazy Drill",
+        "correct": false
+      },
+      {
+        "value": "Call of Duty",
+        "correct": true
+      },
+      {
+        "value": "Creep on Doom",
+        "correct": false
+      },
+      {
+        "value": " Cannons on Damaskus",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Wie heißt das Maskottchen von \"Sega\"?",
+    "choices": [
+      {
+        "value": " Aero the Acro-Bat",
+        "correct": false
+      },
+      {
+        "value": "Titus the Fox",
+        "correct": false
+      },
+      {
+        "value": "Sonic the Hedgehog",
+        "correct": true
+      },
+      {
+        "value": " Frank teh Tank",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+<div class="pt-100 full-height">
+    <div class="container">
+      <div *ngIf="readMode; else profile">
+          <table>
+            <h1 class="mb-3">Profile</h1>
+              <tr>
+                  <td>
+                      Username:
+                  </td>
+                  <td>
+                      {{user.username}}
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    First name:
+                </td>
+                <td>
+                    {{user.firstName}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last name:
+                </td>
+                <td>
+                    {{user.lastName}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Updated:
+                </td>
+                <td>
+                    {{user.updatedAt | date}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary" (click)="modifyProfile()">Modify</button>
+                </td>
+            </tr>
+          </table>
+      </div>
+      <ng-template #profile>
+        <form [formGroup]="profileForm" (ngSubmit)="onSave()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                  <div *ngIf="f.username.errors.required">Username is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input id="firstname" type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" />
+                <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+                  <div *ngIf="f.firstname.errors.required">First name is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input id="lastname" type="text" formControlName="lastname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" />
+                <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+                  <div *ngIf="f.lastname.errors.required">Last name is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password (Leave blank to keep the same password)</label>
+                <input id="password" type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                  <div *ngIf="f.password.errors.required">Password is required</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button [disabled]="loading" class="btn btn-primary">
+                  <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                  Save
+                </button>
+            </div>
+        </form>
+      </ng-template>
+    </div>
+  </div>

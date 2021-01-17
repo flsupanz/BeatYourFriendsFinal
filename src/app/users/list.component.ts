@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 
-import { AccountService } from '@app/_services';
+import { AccountService } from '@app/services';
 
 @Component({ templateUrl: 'list.component.html' })
 export class ListComponent implements OnInit {
@@ -19,13 +19,4 @@ export class ListComponent implements OnInit {
     this.users = this.accountService.usersValue.filter(u => u.id !== this.accountService.userValue.id);
   }
 
-  deleteUser(id: string) {
-    const user = this.users.find(x => x.id === id);
-    user.isDeleting = true;
-    this.accountService.delete(id)
-      .pipe(first())
-      .subscribe(() => {
-        this.users = this.users.filter(x => x.id !== id);
-      });
-  }
 }

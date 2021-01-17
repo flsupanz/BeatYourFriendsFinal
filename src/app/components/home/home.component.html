@@ -1,0 +1,18 @@
+
+<div class="pt-100 full-height" class="p-5 text-center bg-image"
+     style="
+      background-image: url('assets/images/background.jpg');
+      height: 1000px;
+    ">
+  <div class="mask" >
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+    <h1 class="mb-3">Hi {{user.firstName}}!</h1>
+    <h4 class="mb-3">Welcome to BeatYourFriends</h4>
+    <a class="btn btn-outline-light btn-lg" href="#!" role="button" (click)="setChallenger()" [routerLink]="['/startGame', true ]">Start a game</a>
+    <a class="btn btn-outline-light btn-lg" href="#!" role="button" (click)="setChallenged()" routerLink="/challenge">Challenges</a>
+    <a class="btn btn-outline-light btn-lg" href="#!" role="button" routerLink="/scoreboard">Scoreboard</a>
+      </div>
+    </div>
+      </div>
+</div>

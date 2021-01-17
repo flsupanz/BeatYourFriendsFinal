@@ -1,9 +1,10 @@
 <!-- nav -->
 <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
   <div class="navbar-nav">
-    <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-    <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+    <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><img src="favicon.ico" height="25" width="25"></a>
     <a class="nav-item nav-link" routerLink="/profile" routerLinkActive="active">Profile</a>
+    <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+    <a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">About us</a>
     <a class="nav-item nav-link" (click)="logout()">Logout</a>
   </div>
 </nav>

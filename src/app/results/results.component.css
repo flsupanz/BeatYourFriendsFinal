@@ -1,0 +1,8 @@
+.custom-height {
+    height: calc(100vh - 72px);
+}
+
+.pad-40-70 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}

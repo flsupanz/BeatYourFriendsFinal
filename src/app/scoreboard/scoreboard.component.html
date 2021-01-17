@@ -1,0 +1,27 @@
+<div class="container full-height">
+  <!-- {{ scoreboard | json }} -->
+
+  <table class="table" *ngIf="scoreboard?.length > 0; else message">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Quiz</th>
+        <th scope="col">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let score of scoreboard; let i = index" 
+        (click)="scoreClicked($event, score)"
+        [class.highlighted]="score.id === selectedScoreId"
+      >
+      <!-- <ng-container *ngIf="score.testEndPlayer2 !== null"> -->
+        <td>Match Against  {{(score.player1Id === this.userId) ? getPlayerName(score.player2Id) : getPlayerName(score.player1Id)}}</td>
+        <td>{{ this.scoreResult(score) }}</td>
+      <!-- </ng-container> -->
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #message>
+    <h2 class="p-5 text-center">No Quiz</h2>
+  </ng-template>
+</div>

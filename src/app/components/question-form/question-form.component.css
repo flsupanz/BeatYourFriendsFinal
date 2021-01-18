@@ -1,20 +1,12 @@
-.height-150 {
-    height: 150px;
-    background-color: #eee !important;
-}
 
-.choice-container {
-    padding-left: 50px;
-}
-
-mat-card{
-  background-color: white;
-}
 .choices{
   float: left;
-  margin-left:auto;
-  margin-right: auto;
+  margin: 50px;
   vertical-align: middle;
   width: 200px;
   height: 100px;
+  background-color: rgba(0,0,0,0);
+}
+span{
+  font-size: 10px;
 }

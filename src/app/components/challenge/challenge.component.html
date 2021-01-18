@@ -1,8 +1,8 @@
+<body>
 <div class="container full-height">
-  <!-- {{challenges | json}} -->
 
-  <table class="table" *ngIf="challenges?.length > 0; else message">
-    <thead class="thead-light">
+  <table class="table text-white" *ngIf="challenges?.length > 0; else message">
+    <thead>
       <tr>
         <th scope="col">Challenge</th>
         <th scope="col">Challenger</th>
@@ -14,13 +14,15 @@
         *ngFor="let challenge of challenges; let i = index"
         [class.highlighted]="challenge.id === selectedChallengeId"
       >
-        <td>Challenge {{ i + 1 }} from</td>
+        <td>Challenge {{ i + 1 }}</td>
         <td>{{ this.challengerUsername(challenge) || challengerUserName }}</td>
-        <td><button class="btn btn-primary" type="button" (click)="challengeClicked($event, challenge)">Accept and attempt challenge</button></td>
+        <td><a class="btn btn-outline-light btn-lg"  role="button" (click)="challengeClicked($event, challenge)" >Accept challenge</a></td>
       </tr>
     </tbody>
   </table>
   <ng-template #message>
-    <h2 class="p-5 text-center">No Challenges</h2>
+    <h2 class="p-5 text-center text-white">No Challenges</h2>
   </ng-template>
 </div>
+</body>
+

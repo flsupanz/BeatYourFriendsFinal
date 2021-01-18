@@ -1,17 +1,15 @@
+<body>
 <div class="quiz" *ngIf="question">
-  <h1 class="md-display-1 text-center">{{ question.label }}</h1>
-  <mat-card >
-    <mat-card-content>
+  <h3 class="mb-3 text-center text-white">{{ question.label }}</h3>
       <form [formGroup]="form">
         <div class="form-group">
           <label *ngFor="let choice of question.choices" class="choice-container">
-              <mat-card class="choices">
+              <mat-card class="choices text-white">
                 <input type="radio" [value]="choice" formControlName="choice" /> &nbsp;
                 <span>{{ choice.value }}</span>
               </mat-card>
           </label>
         </div>
       </form>
-    </mat-card-content>
-  </mat-card>
 </div>
+</body>

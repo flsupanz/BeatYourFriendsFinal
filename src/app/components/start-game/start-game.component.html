@@ -1,8 +1,9 @@
+<body>
 <div class="p4 full-height container">
   <div *ngIf="!selectUser">
       <mat-card-title class="text-center"></mat-card-title>
-      <mat-card-subtitle class="text-center">
-        <h1 class="md-display-2">Choose a category!</h1>
+      <mat-card-subtitle class="text-center text-white">
+        <h2 class="mb-3">Choose a category!</h2>
       </mat-card-subtitle>
       <div class="flex-container" fxLayout="row" fxLayout.xs="column">
         <mat-card class="quiz-card" *ngFor="let quiz of quizCategories">
@@ -24,17 +25,17 @@
       </div>
   </div>
   <div *ngIf="selectUser">
-    <div class="p20">
-      <h2 class="text-center text-primary">Select Your Opponent</h2>
+    <div class="p20 text-white">
+      <h4 class="text-center mb-3">Select Your Opponent</h4>
     </div>
     <div>
-      <table class="table" *ngIf="users?.length > 0; else message">
-        <thead class="thead-light">
+      <table class="table text-white" *ngIf="users?.length > 0; else message">
+        <thead>
           <tr>
             <th scope="col">#</th>
             <th scope="col">First</th>
             <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Username</th>
           </tr>
         </thead>
         <tbody>
@@ -51,20 +52,14 @@
         </tbody>
       </table>
       <ng-template #message>
-        <h2 class="p-5 text-center">No Opponent User Available</h2>
+        <h2 class="p-5 text-center text-white">No Opponent User Available</h2>
       </ng-template>
     </div>
     <div>
-      <div class="btn-container">
-        <button
-          type="button"
-          (click)="userSelected()"
-          [disabled]="!selectedUserId"
-          class="btn btn-primary"
-        >
-          Select User
-        </button>
+      <div class="btn-container text-white">
+        <a class="btn btn-outline-light " role="button" [hidden]="!selectedUserId" (click)="userSelected()">Select User</a>
       </div>
     </div>
   </div>
 </div>
+</body>

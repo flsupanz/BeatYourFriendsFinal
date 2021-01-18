@@ -1,9 +1,10 @@
+<body>
 <div class="custom-height">
-  <div class="results">
-    <h1 class="md-display-1 text-center">Your results:</h1>
-    <mat-card class="results-container text-center">
+  <div class="results text-white">
+    <h1 class="mb-3 text-center">Your results:</h1>
+
       <div
-        class="answer"
+        class="answer text-white text-center"
         *ngFor="let a of answers.values; let i = index"
         [ngClass]="{ correct: a.correct }"
       >
@@ -15,15 +16,16 @@
           }}</span>
         </p>
       </div>
-      <div class="w-100 d-flex justify-content-center pad-40-70">
-        <div>
-          <button
-            class="btn btn-primary"
+      <div >
+        <div class="text-center">
+          <a
+            class="btn btn-outline-light btn-lg" role="button"
             routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             Back to home
-          </button>
+          </a>
         </div>
       </div>
-    </mat-card>
+
   </div>
 </div>
+</body>

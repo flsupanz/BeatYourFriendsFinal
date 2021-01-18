@@ -1,7 +1,8 @@
+<body>
 <div class="container full-height">
 
-  <table class="table" *ngIf="scoreboard?.length > 0; else message">
-    <thead class="thead-light">
+  <table class="table text-white" *ngIf="scoreboard?.length > 0; else message">
+    <thead>
       <tr>
         <th scope="col">Quiz</th>
         <th scope="col">Result</th>
@@ -21,6 +22,7 @@
     </tbody>
   </table>
   <ng-template #message>
-    <h2 class="p-5 text-center">No Quiz</h2>
+    <h2 class="p-5 text-center text-white">No Quiz</h2>
   </ng-template>
 </div>
+</body>

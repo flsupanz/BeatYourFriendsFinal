@@ -33,18 +33,10 @@ export class ChallengeComponent implements OnInit {
     this.quizService.updatetestEndPlayer1(challenge.testEndPlayer1);
     this.quizService.updatecorrectAnswersPlayer1(challenge.correctAnswersPlayer1);
     this.quizService.updatetestType(challenge.testType);
-
     this.router.navigate([challenge.testType]);
   }
 
   public challengerUsername(challenge: QuizData) {
-    // this.accountService.users.subscribe((data) => {
-    //   this.allUsers = data;
-    //   this.challengerUserName =
-    //     this.allUsers.find((u) => +u.id === challenge.player1Id) &&
-    //     this.allUsers.find((u) => +u.id === challenge.player1Id)
-    //       .username;
-    // });
     this.challengerUserName =
       this.accountService.usersValue.find(
         (u) => +u.id === challenge.player1Id

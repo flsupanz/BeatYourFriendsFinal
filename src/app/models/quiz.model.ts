@@ -26,16 +26,16 @@ export interface QuizCategory {
 export interface QuizData {
   // quizId: number,
   id: number;
-  player1Id: number;  //done.
-  player2Id: number;  // done.
-  testStartPlayer1: Date; //done.
-  testStartPlayer2: Date; // done.
-  testEndPlayer1: Date;  // done.
-  testEndPlayer2: Date; // done.
-  totalQuestions: number; //done.
+  player1Id: number;
+  player2Id: number;
+  testStartPlayer1: Date;
+  testStartPlayer2: Date;
+  testEndPlayer1: Date;
+  testEndPlayer2: Date;
+  totalQuestions: number;
   testType: string;
-  correctAnswersPlayer1: number;// done.
-  correctAnswersPlayer2: number; ///done.
+  correctAnswersPlayer1: number;
+  correctAnswersPlayer2: number;
   updatedAt: Date;
   createdAt: Date;
 }
@@ -44,15 +44,15 @@ export interface QuizData {
 export interface QuizDataPost {
   // quizId: number,
   // id: number;
-  player1Id: number;  //done.
-  player2Id: number;  // done.
-  testStartPlayer1: Date; //done.
-  testStartPlayer2: Date; // done.
-  testEndPlayer1: Date;  // done.
-  testEndPlayer2: Date; // done.
-  totalQuestions: number; //done.
+  player1Id: number;
+  player2Id: number;
+  testStartPlayer1: Date;
+  testStartPlayer2: Date;
+  testEndPlayer1: Date;
+  testEndPlayer2: Date;
+  totalQuestions: number;
   testType: string;
-  correctAnswersPlayer1: number; // done.
-  correctAnswersPlayer2: number; ///done.
+  correctAnswersPlayer1: number;
+  correctAnswersPlayer2: number;
   // updatedAt: Date
 }

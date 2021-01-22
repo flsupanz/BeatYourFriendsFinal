@@ -35,26 +35,26 @@ export class ScoreboardComponent implements OnInit {
   }
 
   public scoreResult(score: QuizData) {
-    if(score.correctAnswersPlayer1 === null || score.correctAnswersPlayer2 == null) {
+    if (score.correctAnswersPlayer1 === null || score.correctAnswersPlayer2 == null) {
       return 'Result Pending';
     }
-    if(score.correctAnswersPlayer1 === score.correctAnswersPlayer2) {
-      return 'Its a tie tie'
+    if (score.correctAnswersPlayer1 === score.correctAnswersPlayer2) {
+      return 'Its a tie tie';
     }
-    if(score.player1Id === this.userId) {
-      if(score.correctAnswersPlayer1 > score.correctAnswersPlayer2) {
-        return 'You Win';
+    if (score.player1Id === this.userId) {
+      if (score.correctAnswersPlayer1 > score.correctAnswersPlayer2) {
+        return 'You Won';
       }
       else {
-        return 'You Lose';
+        return 'You Lost';
       }
     }
     else {
-      if(score.correctAnswersPlayer1 > score.correctAnswersPlayer2) {
-        return 'You Lose';
+      if (score.correctAnswersPlayer1 > score.correctAnswersPlayer2) {
+        return 'You Lost';
       }
       else {
-        return 'You Win';
+        return 'You Won';
       }
     }
     // return this.allUsers.find(u => u.id === challenge.player1Id.toString()).username;

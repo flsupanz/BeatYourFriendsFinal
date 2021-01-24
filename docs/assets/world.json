@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Das \"London Eye\" ist ein Wahrzeichen Englands. Was ist es?",
+    "choices": [
+      {
+        "value": "Riesenrad",
+        "correct": true
+      },
+      {
+        "value": "Statue",
+        "correct": false
+      },
+      {
+        "value": "Burg",
+        "correct": false
+      },
+      {
+        "value": "Museum",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "In der Nähe welcher Großstadt befindet sich die bekannte Universität \"Harvard\"?",
+    "choices": [
+      {
+        "value": "Atlanta",
+        "correct": false
+      },
+      {
+        "value": "Boston",
+        "correct": true
+      },
+      {
+        "value": "Washington",
+        "correct": false
+      },
+      {
+        "value": "Los Angeles",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "In welchem Gebäude wohnt der US-Präsident?",
+    "choices": [
+      {
+        "value": "Hofburg",
+        "correct": false
+      },
+      {
+        "value": "Buckingham Palace",
+        "correct": false
+      },
+      {
+        "value": "Kreml",
+        "correct": false
+      },
+      {
+        "value": "Weißes Haus",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "label": "Von welchem Land ist Bukarest die Hauptstadt?",
+    "choices": [
+      {
+        "value": "Slowenien",
+        "correct": false
+      },
+      {
+        "value": "Slowakei",
+        "correct": false
+      },
+      {
+        "value": "Rumänien",
+        "correct": true
+      },
+      {
+        "value": "Ungarn",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "In welcher Stadt ist man angekommen, wenn man auf dem Flughafen Haneda gelandet ist?",
+    "choices": [
+      {
+        "value": "Peking",
+        "correct": false
+      },
+      {
+        "value": "Tokio",
+        "correct": true
+      },
+      {
+        "value": "Bangkok",
+        "correct": false
+      },
+      {
+        "value": "Shanghai",
+        "correct": false
+      }
+    ]
+  }
+]

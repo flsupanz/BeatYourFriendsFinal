@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Sport & Freizeit",
+    "name": "sports",
+    "description": "Questions about sports",
+    "fileName": "sport.json"
+  },
+  {
+    "label": "Rund um die Welt",
+    "name": "world",
+    "description": "Questions about the world",
+    "fileName": "world.json"
+  },
+  {
+    "label": "Computerspiele",
+    "name": "games",
+    "description": "Questions about games",
+    "fileName": "games.json"
+  },
+  {
+    "label": "Körper & Geist",
+    "name": "body",
+    "description": "Questions about body",
+    "fileName": "body.json"
+  }
+]

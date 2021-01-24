@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Bei welchen Fußballverein war Joachim Löw noch nie Trainer?",
+    "choices": [
+      {
+        "value": "FC Bayern",
+        "correct": true
+      },
+      {
+        "value": "VFB Stuttgart",
+        "correct": false
+      },
+      {
+        "value": "Karlsruher FC",
+        "correct": false
+      },
+      {
+        "value": "Fenerbahce",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "In welcher Sportart sind die Miami Marlins aktiv?",
+    "choices": [
+      {
+        "value": "Eishockey",
+        "correct": false
+      },
+      {
+        "value": "Basketball",
+        "correct": false
+      },
+      {
+        "value": "American Football",
+        "correct": false
+      },
+      {
+        "value": "Baseball",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "label": "Welches der folgenden Teams ist ein NHL Team aus NY?",
+    "choices": [
+      {
+        "value": "Islanders",
+        "correct": true
+      },
+      {
+        "value": "Penguins",
+        "correct": false
+      },
+      {
+        "value": "Kings",
+        "correct": false
+      },
+      {
+        "value": "Ducks",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "Wie viele Versuche gibts es, um in American Football ein First Down zu erzielen?",
+    "choices": [
+      {
+        "value": "3",
+        "correct": false
+      },
+      {
+        "value": "4",
+        "correct": true
+      },
+      {
+        "value": "5",
+        "correct": false
+      },
+      {
+        "value": "6",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "label": "In welcher Stadt findet KEIN Tennis Grand Slam statt?",
+    "choices": [
+      {
+        "value": "Berlin",
+        "correct": true
+      },
+      {
+        "value": "London",
+        "correct": false
+      },
+      {
+        "value": "Paris",
+        "correct": false
+      },
+      {
+        "value": "New York City",
+        "correct": false
+      }
+    ]
+  }
+]

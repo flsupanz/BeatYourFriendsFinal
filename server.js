@@ -22,5 +22,5 @@ app.get('/*', function(req,res) {
 });
 
 // start server
-const port = 8080;
+const port = 4000;
 app.listen(port, () => console.log('Server listening on port ' + port));

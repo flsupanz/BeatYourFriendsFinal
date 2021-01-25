@@ -12,7 +12,6 @@ export class ScoreboardComponent implements OnInit {
 
   public scoreboard: QuizData[] =[];
   public selectedScoreId: number;
-  // public showTableFlag: boolean;
   public userId: number;
   constructor(private quizService: QuizService,
     private accountService: AccountService) {
@@ -21,17 +20,10 @@ export class ScoreboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.scoreboard = this.quizService.getResult();
-    // this.showTableFlag =
-    // this.scoreboard.forEach(
-    //   score => {
-    //     score.testEndPlayer2 !== null ? this.showTableFlag = true : this.showTableFlag = false;
-    //   }
-    // )
   }
 
   public scoreClicked($event, score: QuizData){
     this.selectedScoreId = score.id;
-    // this.router.navigate(['startGame']);
   }
 
   public scoreResult(score: QuizData) {
@@ -57,7 +49,6 @@ export class ScoreboardComponent implements OnInit {
         return 'You Won';
       }
     }
-    // return this.allUsers.find(u => u.id === challenge.player1Id.toString()).username;
   }
 
   public getPlayerName(playerId: number) {

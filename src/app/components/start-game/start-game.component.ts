@@ -27,10 +27,6 @@ export class StartGameComponent implements OnInit{
         this.quiz = quiz;
       });
     this.user = this.accountService.userValue;
-
-    // this.accountService.users
-    //   .pipe(first())
-    //   .subscribe(users => this.users = users.filter(user => user.id !== this.user.id));
     this.users = this.accountService.usersValue.filter(user => user.id !== this.user.id);
 
     this.quizCategories = [
@@ -62,7 +58,6 @@ export class StartGameComponent implements OnInit{
   }
   ngOnInit() {
     this.selectUser = this.route.snapshot.paramMap.get('showUsers') == 'true';
-    // throw new Error('Method not implemented.');
   }
 
   public userSelected() {
@@ -77,9 +72,5 @@ export class StartGameComponent implements OnInit{
   public setQuizType(quizType: string) {
     this.quizService.updatetestType(quizType);
   }
-
-  // public player1Started() {
-  //   this.quizService.updatetestStartPlayer1(new Date())
-  // }
 
 }

@@ -22,8 +22,6 @@ export class HomeComponent {
     this.quizService.updatecorrectAnswersPlayer1(null);
     this.quizService.updatecorrectAnswersPlayer2(null);
     this.quizService.updatetestType(null);
-
-    // this.quizService.updatePlayer1(+this.user.id);
     this.quizService.getAllQuiz().subscribe(
       quizData => {
         this.quizService.masterQuizData = quizData;

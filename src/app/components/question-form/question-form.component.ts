@@ -12,7 +12,6 @@ import { Question } from '@app/models/quiz.model';
 })
 export class QuestionFormComponent implements OnInit {
   // decorators to define input (= question) and output (= when choice is made)
-  // like props in React
   @Input() question: Question;
   @Output() onChoiceMade = new EventEmitter<string>();
 

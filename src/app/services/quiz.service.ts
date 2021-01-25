@@ -40,12 +40,6 @@ export class QuizService {
     return this.challenges;
   }
   getResult() {
-    // this.results = [
-      // ...this.challenges,
-      // ...this.masterQuizData.filter(
-      //   (quiz) => quiz.player2Id === +this.accountService.userValue.id
-      // ),
-    // ];
     this.results = this.masterQuizData.filter(quiz => quiz.player1Id === +this.accountService.userValue.id || quiz.player2Id === +this.accountService.userValue.id )
     return this.results;
   }
@@ -80,8 +74,6 @@ export class QuizService {
     this.userGame.correctAnswersPlayer2 = answersP2;
   }
   insertRecordInQuiz() {
-    // this.http.setDataSerializer('utf8');
-    // response = await this.httpClient.post(url, JSON.stringify(postBody), {'Content-Type': 'application/json'});
     return this.http.post(`${environment.apiUrl}/quiz/addQuiz`, this.userGame);
   }
   updateRecordInQuiz() {

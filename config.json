@@ -1,11 +1,10 @@
-
 {
   "database": {
-    "host": "localhost",
+    "host": "eu-cdbr-west-03.cleardb.net",
     "port": 3306,
-    "user": "root",
-    "password": "ratsche1",
-    "database": "BeatYourFriends"
+    "user": "b910eee09ca2a5",
+    "password": "e89990a5",
+    "database": "heroku_9f59cec70fb0df2"
   },
   "secret": "This is a secret"
 }

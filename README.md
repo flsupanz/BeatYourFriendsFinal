@@ -1,27 +1,29 @@
-# WebTechProject2020
+## Follow these instructions to start the application local 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+### 1) Download mySQl Community server and workbench
 
-## Development server
+Use this links: 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+for server: Server: https://dev.mysql.com/downloads/mysql/
 
-## Code scaffolding
+for workbench: Workbench: https://dev.mysql.com/downloads/workbench/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 2) Create Schema named BeatYourFriends in your database
 
-## Build
+### 3) Change the password in config.json to your password for the database 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### 4) Run npm install
 
-## Running unit tests
+### 5) Open a Terminal window and run npm start to start the server 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 6) Open second Terminal window to run ng serve to start the application
 
-## Running end-to-end tests
+### 7) Register at least two users (so you can play against each other)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### 8) Login in with one User
 
-## Further help
+### 9) Play a game against the other user
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Heroku Deployment
+https://beat-your-friends.herokuapp.com/
+
